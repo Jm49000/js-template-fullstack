@@ -1,0 +1,86 @@
+// ! Mobile mode
+.mobile-container {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  background-color: white;
+
+}
+
+.button-burger {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 2rem;
+  width: 2rem;
+}
+// * Burger slide
+.slider-mobile {
+  position: relative;
+}
+.burgerslide {
+  display: none;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    height: 100vh;
+    right: 0%;
+    margin-top: 60px;
+    width: 80%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: rgba(44, 47, 51, 0.6);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 8px 32px 0 rgba(253, 253, 253, 0.37);
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.ul-burger {
+  margin-top: 20px;
+  li {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+.mobile-icon-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  p {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 36px;
+    color: black;
+  }
+}
+.burgerslide-active {
+  p {
+    border-bottom: white solid 2px;
+    animation: pulse3 infinite 3s;
+  }
+  text-decoration: none;
+}
+
+// ! Media Queries
+
+@media (min-width: 600px) {
+  .mobile-container {
+    display: none;
+  }
+  .slider-mobile {
+    display: none;
+  }
+}

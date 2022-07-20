@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/* Desktop */
+.wrapper {
+  display: grid;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.titre-contact {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.hr-contact {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.info-contact {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.name-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-contact label {
+  width: 45%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.nom-contact {
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 5px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  height: 2rem;
+  margin-bottom: 1.5rem;
+}
+.nom-contact:focus {
+  outline: none;
+}
+.prenom-contact {
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .prenom-contact:focus {
+    outline: none;
+  }
+.email-label {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.email-label input:focus {
+  outline: none;
+}
+.email-label input {
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-label {
+  display: block;
+}
+
+.message-contact textarea {
+  border-radius: 10px;
+  resize: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  height: 12rem;
+  margin-bottom: -1rem;
+}
+.message-contact textarea:focus {
+  outline: none;
+}
+.message-contact {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.container-button-contact {
+  display: flex;
+  justify-content: center;
+}
+.button-contact {
+  width: 250px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  border: none;
+  height: 50px;
+  background-color: grey;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  border-radius: 15px;
+  text-decoration: underline;
+
+}
+
+.map-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+  .contact_form {
+    border-radius: 0;
+  }
+  .img-contact img {
+    display: none;
+    background: #f9f9f9;
+    box-shadow: 2.5px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50px 0px 50px 0px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+  .wrapper {
+    display: inline;
+  }
+  .titre-contact {
+    padding-top: 5rem;
+    margin-top: 0;
+  }
+  .button-contact {
+    width: 195px;
+    height: 41px;
+    align-items: center;
+  }
+  .img-contact {
+    display: none;
+  }
+  .logo-maraicheur {
+    display: none;
+  }
+  .logo-mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-maraicheur2 {
+    display: block;
+    height: 5rem;
+    width: 5rem;
+  }
+  .nom-prenom {
+    width: 7rem;
+  }
+
+  .name-contact label {
+    padding-right: 9rem;
+  }
+
+  .email-label input {
+    width: 16rem;
+  }
+  .message-contact textarea {
+    height: 8rem;
+    width: 16rem;
+  }
+
+  .map-contact {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  .info-contact {
+    margin-top: 15px;
+  }
+}

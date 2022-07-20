@@ -7,16 +7,22 @@ export default function Navbar() {
     <nav className="background-nav">
       <div className="nav-position">
         <NavLink
-          to="home"
+          to="/"
           className={(nav) => (nav.isActive ? "nav-d-active" : undefined)}
         >
           <p>Accueil</p>
         </NavLink>
         <NavLink
-          to="project"
+          to="/project"
           className={(nav) => (nav.isActive ? "nav-d-active" : undefined)}
         >
           <p>Project</p>
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={(nav) => (nav.isActive ? "nav-d-active" : undefined)}
+        >
+          <p>Contact</p>
         </NavLink>
       </div>
     </nav>
