@@ -22,15 +22,16 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
-CREATE TABLE `admin` (
+CREATE TABLE `adm` (
   `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `question` varchar(80) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 CREATE TABLE `pictures`(
   `id`int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `name` varchar(80) NOT NULL,
+  `file` varchar(255) NOT NULL,
   `describe`varchar (255) NOT NULL
 )ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
