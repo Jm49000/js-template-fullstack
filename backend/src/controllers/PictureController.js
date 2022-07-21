@@ -4,38 +4,15 @@ const models = require("../models");
 
 class PictureController {
   static browse = (req, res) => {
-    const { categories, picSection } = req.query;
-    const filter = {};
-    if (picSection) {
-      filter.picSection = parseInt(picSection, 10);
-    }
-    if (categories) {
-      filter.categories = categories;
-    }
-    if (filter.picSection || filter.categories) {
-      // console.log(filter);
-      models.pictures
-        .findAllWithFilter(filter)
-        .then(([rows]) => {
-          res.send(rows);
-        })
-        .catch((err) => {
-          console.error(err);
-          res.sendStatus(500);
-        });
-    } else {
-      // console.log("all");
-      models.pictures
-        .findAll()
-        .then(([rows]) => {
-          res.send(rows);
-          // console.log(rows);
-        })
-        .catch((err) => {
-          console.error(err);
-          res.sendStatus(500);
-        });
-    }
+    models.pictures
+      .findByPictures()
+      .then(([rows]) => {
+        res.send(rows);
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
   };
 
   static read = (req, res) => {

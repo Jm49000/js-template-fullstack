@@ -16,7 +16,7 @@ export default function Navbar() {
           to="/project"
           className={(nav) => (nav.isActive ? "nav-d-active" : undefined)}
         >
-          <p>Project</p>
+          <p>Projet</p>
         </NavLink>
         <NavLink
           to="/contact"

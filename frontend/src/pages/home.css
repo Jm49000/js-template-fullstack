@@ -49,3 +49,11 @@ img.img-home{
 .text-home{
     margin: 0.7rem;
 }
+
+.hr-home {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -1rem;
+  }

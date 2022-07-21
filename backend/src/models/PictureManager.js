@@ -1,3 +1,4 @@
+/* eslint-disable lines-between-class-members */
 /* eslint-disable class-methods-use-this */
 const Joi = require("joi");
 const AbstractManager = require("./AbstractManager");
@@ -16,6 +17,9 @@ class PictureManager extends AbstractManager {
       `select file, alt, pictogram, categories, picSection from  ${this.table} where id = ? `,
       [id]
     );
+  }
+  findByPictures() {
+    return this.connection.query(`SELECT * FROM ${this.table} `);
   }
 
   findBySection(id) {

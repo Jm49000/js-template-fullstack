@@ -76,7 +76,7 @@ export default function Upload() {
       // console.log(data);
       getImage();
       // eslint-disable-next-line no-use-before-define
-      getText();
+      // getText();
       return setUpdateFile(data);
     } catch (err) {
       console.warn(err);
@@ -88,7 +88,7 @@ export default function Upload() {
   const getImage = async () => {
     try {
       const data = await axios
-        .get(`pictures?categories=${categories}`)
+        .get(`pictures`)
         .then((response) => response.data);
       // console.log(data);
       setImage(data);
@@ -100,24 +100,24 @@ export default function Upload() {
     }
   };
 
-  const getText = async () => {
-    try {
-      const data = await axios
-        .get(`${import.meta.env.VITE_BACKEND_URL}text`)
-        .then((response) => response.data);
-      // console.log(data);
-      setText(data.filter((item) => item.page === "propos"));
-    } catch (err) {
-      if (err.response.status === 401) {
-        // eslint-disable-next-line
-        alert("Picture doesn't exists");
-      }
-    }
-  };
+  // const getText = async () => {
+  //   try {
+  //     const data = await axios
+  //       // .get(`${import.meta.env.VITE_BACKEND_URL}text`)
+  //       .then((response) => response.data);
+  //     // console.log(data);
+  //     setText(data.filter((item) => item.page === "propos"));
+  //   } catch (err) {
+  //     if (err.response.status === 401) {
+  //       // eslint-disable-next-line
+  //       alert("Picture doesn't exists");
+  //     }
+  //   }
+  // };
 
   useEffect(() => {
     getImage();
-    getText();
+    // getText();
   }, [categories]);
 
   return (
@@ -147,20 +147,16 @@ export default function Upload() {
           onChange={(e) => setCategories(e.target.value)}
         >
           <option value="select">Select</option>
-          <option value="carousel">carousel</option>
-          <option value="home">home</option>
-          <option value="methode">methode</option>
-          <option value="propos">propos</option>
-          <option value="contact">contact</option>
+          <option value="propos">projets</option>
         </select>
         {categories === "propos" && (
           <select onChange={(e) => setTextId(e.target.value)}>
             <option value="select">Select</option>
-            {text.map((item) => (
+            {/* {text.map((item) => (
               <option value={item.id}>
                 {parse(item.title.substring(0, 50))}
               </option>
-            ))}
+            ))} */}
           </select>
         )}
       </label>
