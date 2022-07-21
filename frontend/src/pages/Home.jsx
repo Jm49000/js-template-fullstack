@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/no-unresolved */
@@ -16,6 +17,7 @@ export default function Home() {
         <img className="img-home" src={jm} />
         <div className="propos-home">
           <h4>A propos de moi</h4>
+          <hr className="hr-home"></hr>
           <p className="text-home">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
