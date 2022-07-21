@@ -1,0 +1,51 @@
+.img-home {
+    width: 25rem ;
+    height: 25rem;
+    /* display: flex;
+    flex-wrap: wrap;
+    margin-left: 15rem; */
+    grid-area: img;
+    justify-content: center;
+    margin: auto;
+    margin-right: -1rem;
+    
+
+}
+img.img-home{
+    border-radius: 10px 0px 0px 10px;
+}
+.wrapper-home{
+    background: rgba( 238, 237, 237, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 7rem;
+    display: grid;
+    grid-template-rows: 1fr 0fr 0fr 0fr;
+    grid-template-columns: 1fr 1fr 0fr auto;
+    grid-template-areas: "img project";
+    width: 70%;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.propos-home{
+    background-color: #C0C0C0;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    margin-right: 1rem;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+}
+
+.propos-home h4{
+    color: black;
+    margin-top: 5rem;
+}
+
+.text-home{
+    margin: 0.7rem;
+}
