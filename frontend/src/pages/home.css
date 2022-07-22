@@ -1,9 +1,6 @@
 .img-home {
     width: 25rem ;
     height: 25rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    margin-left: 15rem; */
     grid-area: img;
     justify-content: center;
     margin: auto;
@@ -33,10 +30,9 @@ img.img-home{
 .propos-home{
     background-color: #C0C0C0;
     height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     border-radius: 10px;
-    margin-right: 1rem;
+   margin-right: 10rem;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 
 }
