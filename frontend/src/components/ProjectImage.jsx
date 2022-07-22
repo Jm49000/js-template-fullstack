@@ -32,8 +32,10 @@ export default function ProjectImage() {
       {image.map((picture) => (
         <div key={picture.id}>
           <a href="https://www.youtube.com/">
-          <img src={`${import.meta.env.VITE_IMAGES_URL}${picture.file}`}
-          alt={picture.describe} />
+            <img
+              src={`${import.meta.env.VITE_IMAGES_URL}${picture.file}`}
+              alt={picture.describe}
+            />
           </a>
         </div>
       ))}
