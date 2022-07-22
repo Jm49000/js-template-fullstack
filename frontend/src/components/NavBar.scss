@@ -8,7 +8,8 @@
     .nav-position {
       display: flex;
       justify-content: center;
-      background-color: gray;
+      background-color: #C0C0C0;
+      opacity: 60%;
   
       a {
         margin-left: 0px;
@@ -23,16 +24,16 @@
   
         &:hover {
           transition: 200ms;
-          color: aqua;
+          color: #6A5ACD;
         }
       }
     }
   
     .nav-d-active {
       p {
-        color: blue;
+        color: #6A5ACD;
         animation: fade-in-left 2s;
-        border-bottom: blue($color: #000000) solid 20px;
+        border-bottom: blue($color: #6A5ACD) solid 20px;
       }
     }
   }

@@ -89,7 +89,7 @@ const TextEditor = () => {
 
   const fetchTextById = (id) => {
     axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/text/${id}`)
+      .get(`${import.meta.env.VITE_BACKEND_URL}/pictures/${id}`)
       .then((result) => {
         setCurrentId(result.data.id);
         updatedContent = result.data.body;
